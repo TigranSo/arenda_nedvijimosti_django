@@ -1,0 +1,1452 @@
+[
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "messages",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "Owner",
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "isExtraImport": true,
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "Arenda",
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "isExtraImport": true,
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "Sale",
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "isExtraImport": true,
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "Yacht",
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "isExtraImport": true,
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "News",
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "isExtraImport": true,
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "Reservation",
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "isExtraImport": true,
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "Applications",
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "isExtraImport": true,
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "Region",
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "isExtraImport": true,
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "Country",
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "isExtraImport": true,
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "City",
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "isExtraImport": true,
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "Imgmain",
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "isExtraImport": true,
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "Owner",
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "isExtraImport": true,
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "Arenda",
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "isExtraImport": true,
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "Sale",
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "isExtraImport": true,
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "Yacht",
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "isExtraImport": true,
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "News",
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "isExtraImport": true,
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "Reservation",
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "isExtraImport": true,
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "Applications",
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "isExtraImport": true,
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "Region",
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "isExtraImport": true,
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "Owner",
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "isExtraImport": true,
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "Arenda",
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "isExtraImport": true,
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "Sale",
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "isExtraImport": true,
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "Yacht",
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "isExtraImport": true,
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "News",
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "isExtraImport": true,
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "Reservation",
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "isExtraImport": true,
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "Applications",
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "isExtraImport": true,
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "Country",
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "isExtraImport": true,
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "City",
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "isExtraImport": true,
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "Region",
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "isExtraImport": true,
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "Imgmain",
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "isExtraImport": true,
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "TranslationAdmin",
+        "importPath": "modeltranslation.admin",
+        "description": "modeltranslation.admin",
+        "isExtraImport": true,
+        "detail": "modeltranslation.admin",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "gettext_lazy",
+        "importPath": "django.utils.translation",
+        "description": "django.utils.translation",
+        "isExtraImport": true,
+        "detail": "django.utils.translation",
+        "documentation": {}
+    },
+    {
+        "label": "gettext_lazy",
+        "importPath": "django.utils.translation",
+        "description": "django.utils.translation",
+        "isExtraImport": true,
+        "detail": "django.utils.translation",
+        "documentation": {}
+    },
+    {
+        "label": "gettext_lazy",
+        "importPath": "django.utils.translation",
+        "description": "django.utils.translation",
+        "isExtraImport": true,
+        "detail": "django.utils.translation",
+        "documentation": {}
+    },
+    {
+        "label": "get_language",
+        "importPath": "django.utils.translation",
+        "description": "django.utils.translation",
+        "isExtraImport": true,
+        "detail": "django.utils.translation",
+        "documentation": {}
+    },
+    {
+        "label": "activate",
+        "importPath": "django.utils.translation",
+        "description": "django.utils.translation",
+        "isExtraImport": true,
+        "detail": "django.utils.translation",
+        "documentation": {}
+    },
+    {
+        "label": "gettext",
+        "importPath": "django.utils.translation",
+        "description": "django.utils.translation",
+        "isExtraImport": true,
+        "detail": "django.utils.translation",
+        "documentation": {}
+    },
+    {
+        "label": "gettext_lazy",
+        "importPath": "django.utils.translation",
+        "description": "django.utils.translation",
+        "isExtraImport": true,
+        "detail": "django.utils.translation",
+        "documentation": {}
+    },
+    {
+        "label": "gettext_lazy",
+        "importPath": "django.utils.translation",
+        "description": "django.utils.translation",
+        "isExtraImport": true,
+        "detail": "django.utils.translation",
+        "documentation": {}
+    },
+    {
+        "label": "Decimal",
+        "importPath": "_decimal",
+        "description": "_decimal",
+        "isExtraImport": true,
+        "detail": "_decimal",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "register",
+        "importPath": "modeltranslation.translator",
+        "description": "modeltranslation.translator",
+        "isExtraImport": true,
+        "detail": "modeltranslation.translator",
+        "documentation": {}
+    },
+    {
+        "label": "TranslationOptions",
+        "importPath": "modeltranslation.translator",
+        "description": "modeltranslation.translator",
+        "isExtraImport": true,
+        "detail": "modeltranslation.translator",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponseRedirect",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "ListView",
+        "importPath": "django.views.generic",
+        "description": "django.views.generic",
+        "isExtraImport": true,
+        "detail": "django.views.generic",
+        "documentation": {}
+    },
+    {
+        "label": "DetailView",
+        "importPath": "django.views.generic",
+        "description": "django.views.generic",
+        "isExtraImport": true,
+        "detail": "django.views.generic",
+        "documentation": {}
+    },
+    {
+        "label": "send_mail",
+        "importPath": "django.core.mail",
+        "description": "django.core.mail",
+        "isExtraImport": true,
+        "detail": "django.core.mail",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "static",
+        "importPath": "django.conf.urls.static",
+        "description": "django.conf.urls.static",
+        "isExtraImport": true,
+        "detail": "django.conf.urls.static",
+        "documentation": {}
+    },
+    {
+        "label": "i18n_patterns",
+        "importPath": "django.conf.urls.i18n",
+        "description": "django.conf.urls.i18n",
+        "isExtraImport": true,
+        "detail": "django.conf.urls.i18n",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "arenda.migrations.0001_initial",
+        "description": "arenda.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Applications',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('name', models.CharField(max_length=100, verbose_name='Имя')),",
+        "detail": "arenda.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "arenda.migrations.0002_remove_region_name_en",
+        "description": "arenda.migrations.0002_remove_region_name_en",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('arenda', '0001_initial'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='region',\n            name='name_en',\n        ),\n    ]",
+        "detail": "arenda.migrations.0002_remove_region_name_en",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "arenda.migrations.0003_country_alter_region_options_city_arenda_city_and_more",
+        "description": "arenda.migrations.0003_country_alter_region_options_city_arenda_city_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('arenda', '0002_remove_region_name_en'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Country',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('name', models.CharField(max_length=100, verbose_name='Страна')),",
+        "detail": "arenda.migrations.0003_country_alter_region_options_city_arenda_city_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "arenda.migrations.0004_city_name_en_country_name_en_region_name_en",
+        "description": "arenda.migrations.0004_city_name_en_country_name_en_region_name_en",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('arenda', '0003_country_alter_region_options_city_arenda_city_and_more'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='city',\n            name='name_en',\n            field=models.CharField(blank=True, max_length=100, null=True, verbose_name='Город на английском'),\n        ),",
+        "detail": "arenda.migrations.0004_city_name_en_country_name_en_region_name_en",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "arenda.migrations.0005_arenda_location_en_arenda_description_1_en_and_more",
+        "description": "arenda.migrations.0005_arenda_location_en_arenda_description_1_en_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('arenda', '0004_city_name_en_country_name_en_region_name_en'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='arenda',\n            name='Location_en',\n            field=models.CharField(blank=True, max_length=100, null=True, verbose_name='Расположение на английском'),\n        ),",
+        "detail": "arenda.migrations.0005_arenda_location_en_arenda_description_1_en_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "arenda.migrations.0006_alter_arenda_location_alter_arenda_location_en_and_more",
+        "description": "arenda.migrations.0006_alter_arenda_location_alter_arenda_location_en_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('arenda', '0005_arenda_location_en_arenda_description_1_en_and_more'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='arenda',\n            name='Location',\n            field=models.CharField(default=1, max_length=200, verbose_name='Расположение'),\n            preserve_default=False,",
+        "detail": "arenda.migrations.0006_alter_arenda_location_alter_arenda_location_en_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "arenda.migrations.0007_city_popular_country_popular_region_popular",
+        "description": "arenda.migrations.0007_city_popular_country_popular_region_popular",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('arenda', '0006_alter_arenda_location_alter_arenda_location_en_and_more'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='city',\n            name='popular',\n            field=models.BooleanField(default=False, verbose_name='Популярные направления ?'),\n        ),",
+        "detail": "arenda.migrations.0007_city_popular_country_popular_region_popular",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "arenda.migrations.0008_alter_arenda_property_type_and_more",
+        "description": "arenda.migrations.0008_alter_arenda_property_type_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('arenda', '0007_city_popular_country_popular_region_popular'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='arenda',\n            name='property_type',\n            field=models.CharField(choices=[('vila', 'Villa'), ('shale', 'Chalet'), ('apartamenti', 'Apartment'), ('yaxta', 'Yacht')], max_length=15, verbose_name='тип жилья'),\n        ),",
+        "detail": "arenda.migrations.0008_alter_arenda_property_type_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "arenda.migrations.0009_alter_sale_property_type_alter_sale_property_type_2_and_more",
+        "description": "arenda.migrations.0009_alter_sale_property_type_alter_sale_property_type_2_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('arenda', '0008_alter_arenda_property_type_and_more'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='sale',\n            name='property_type',\n            field=models.CharField(choices=[('vila', 'Villa'), ('shale', 'Chalet'), ('apartamenti', 'Apartment'), ('yaxta', 'Yacht')], max_length=15, verbose_name='тип жилья'),\n        ),",
+        "detail": "arenda.migrations.0009_alter_sale_property_type_alter_sale_property_type_2_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "arenda.migrations.0010_city_img_country_img_region_img",
+        "description": "arenda.migrations.0010_city_img_country_img_region_img",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('arenda', '0009_alter_sale_property_type_alter_sale_property_type_2_and_more'),\n    ]\n    operations = [\n        migrations.AddField(\n            model_name='city',\n            name='img',\n            field=models.ImageField(blank=True, null=True, upload_to='img', verbose_name='Картина'),\n        ),",
+        "detail": "arenda.migrations.0010_city_img_country_img_region_img",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "arenda.migrations.0011_imgmain",
+        "description": "arenda.migrations.0011_imgmain",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('arenda', '0010_city_img_country_img_region_img'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Imgmain',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('name', models.CharField(max_length=100, verbose_name='Текст')),",
+        "detail": "arenda.migrations.0011_imgmain",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "arenda.migrations.0012_remove_imgmain_name",
+        "description": "arenda.migrations.0012_remove_imgmain_name",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('arenda', '0011_imgmain'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='imgmain',\n            name='name',\n        ),\n    ]",
+        "detail": "arenda.migrations.0012_remove_imgmain_name",
+        "documentation": {}
+    },
+    {
+        "label": "ArendaConfig",
+        "kind": 6,
+        "importPath": "arenda.apps",
+        "description": "arenda.apps",
+        "peekOfCode": "class ArendaConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'arenda'",
+        "detail": "arenda.apps",
+        "documentation": {}
+    },
+    {
+        "label": "ReservationForm",
+        "kind": 6,
+        "importPath": "arenda.forms",
+        "description": "arenda.forms",
+        "peekOfCode": "class ReservationForm(forms.ModelForm):\n    class Meta:\n        model = Reservation\n        fields = ['arrival', 'departure', 'full_name', 'phone', 'email', 'preferences']\n        widgets = {\n            'arrival': forms.DateInput(attrs={'type': 'date'}),\n            'departure': forms.DateInput(attrs={'type': 'date'}),\n        }\n        labels = {\n            'arrival': _('Arrival'),",
+        "detail": "arenda.forms",
+        "documentation": {}
+    },
+    {
+        "label": "ApplicationsForm",
+        "kind": 6,
+        "importPath": "arenda.forms",
+        "description": "arenda.forms",
+        "peekOfCode": "class ApplicationsForm(forms.ModelForm):\n    class Meta:\n        model = Applications\n        fields = ['name', 'email', 'tel']\nclass SearchForm(forms.Form):\n    region = forms.ModelChoiceField(\n        queryset=Region.objects.all(),\n        required=True,\n        label='Регион',\n        widget=forms.Select(attrs={'class': 'form-control custom-class'}),",
+        "detail": "arenda.forms",
+        "documentation": {}
+    },
+    {
+        "label": "SearchForm",
+        "kind": 6,
+        "importPath": "arenda.forms",
+        "description": "arenda.forms",
+        "peekOfCode": "class SearchForm(forms.Form):\n    region = forms.ModelChoiceField(\n        queryset=Region.objects.all(),\n        required=True,\n        label='Регион',\n        widget=forms.Select(attrs={'class': 'form-control custom-class'}),\n        initial=Region.objects.first() \n    )\n    property_type_2 = forms.ChoiceField(\n        choices=Arenda.PROPERTY_CHOICES_2,",
+        "detail": "arenda.forms",
+        "documentation": {}
+    },
+    {
+        "label": "Owner",
+        "kind": 6,
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "peekOfCode": "class Owner(models.Model):\n    name_obj = models.CharField(max_length=100, verbose_name='Название объекта')\n    tel = models.CharField(max_length=60, verbose_name='телефон')\n    email = models.CharField(max_length=100, verbose_name='Почта')\n    url_film = models.URLField(blank=True, null=True, verbose_name='Ссылка на сайт')\n    description_2 = models.TextField(blank=True, verbose_name='Примичание')\n    date_created_1 = models.DateTimeField(auto_now_add=True)\n    class Meta:\n        verbose_name_plural = 'Владелец объекта'\n    def __str__(self):",
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "Country",
+        "kind": 6,
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "peekOfCode": "class Country(models.Model):\n    name = models.CharField(max_length=100, verbose_name='Страна')\n    name_en = models.CharField(max_length=100, blank=True, null=True, verbose_name='Страна на английском')\n    img = models.ImageField(upload_to='img', blank=True, null=True, verbose_name='Картина')\n    popular = models.BooleanField(default=False, blank=False, verbose_name='Популярные направления ?')\n    class Meta:\n        verbose_name_plural = 'Страны'\n    def __str__(self):\n        return f\"{self.name}\"\nclass City(models.Model):",
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "City",
+        "kind": 6,
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "peekOfCode": "class City(models.Model):\n    name = models.CharField(max_length=100, verbose_name='Город')\n    name_en = models.CharField(max_length=100, blank=True, null=True, verbose_name='Город на английском')\n    country = models.ForeignKey(Country, on_delete=models.CASCADE, related_name='cities', verbose_name='Страна')\n    img = models.ImageField(upload_to='img', blank=True, null=True, verbose_name='Картина')\n    popular = models.BooleanField(default=False, blank=False, verbose_name='Популярные направления ?')\n    class Meta:\n        verbose_name_plural = 'Города'\n    def __str__(self):\n        return f\"{self.name}\"",
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "Region",
+        "kind": 6,
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "peekOfCode": "class Region(models.Model):\n    name = models.CharField(max_length=100, verbose_name='Регион')\n    name_en = models.CharField(max_length=100, blank=True, null=True, verbose_name='Регион на английском')\n    city = models.ForeignKey(City, on_delete=models.CASCADE, related_name='regions', verbose_name='Город')\n    img = models.ImageField(upload_to='img', blank=True, null=True, verbose_name='Картина')\n    popular = models.BooleanField(default=False, blank=False, verbose_name='Популярные направления ?')\n    class Meta:\n        verbose_name_plural = 'Регионы'\n    def __str__(self):\n        return f\"{self.name}\"",
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "Arenda",
+        "kind": 6,
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "peekOfCode": "class Arenda(models.Model):\n    PROPERTY_CHOICES = [\n        ('vila', _('Villa')),  \n        ('shale', _('Chalet')),  \n        ('apartamenti', _('Apartment')),  \n        ('yaxta', _('Yacht')), \n    ]\n    PROPERTY_CHOICES_2 = [\n        ('rent', _('Rent')),  \n        ('buy', _('Buy')),  ",
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "Sale",
+        "kind": 6,
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "peekOfCode": "class Sale(models.Model):\n    PROPERTY_CHOICES = [\n        ('vila', _('Villa')),  \n        ('shale', _('Chalet')),  \n        ('apartamenti', _('Apartment')),  \n        ('yaxta', _('Yacht')), \n    ]\n    PROPERTY_CHOICES_2 = [\n        ('rent', _('Rent')),  \n        ('buy', _('Buy')),  ",
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "Yacht",
+        "kind": 6,
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "peekOfCode": "class Yacht(models.Model):\n    PROPERTY_CHOICES = [\n        ('vila', _('Villa')),  \n        ('shale', _('Chalet')),  \n        ('apartamenti', _('Apartment')),  \n        ('yaxta', _('Yacht')), \n    ]\n    PROPERTY_CHOICES_2 = [\n        ('rent', _('Rent')),  \n        ('buy', _('Buy')),  ",
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "News",
+        "kind": 6,
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "peekOfCode": "class News(models.Model):\n    name = models.CharField(max_length=100, verbose_name='Название')\n    name_en = models.CharField(max_length=100, blank=True, null=True, verbose_name='Название на английском')\n    description = models.TextField(blank=True, null=True, verbose_name='Информация об объекте')\n    description_en = models.TextField(blank=True, null=True, verbose_name='Информация об объекте на английском')\n    img_main = models.ImageField(upload_to='img', blank=False, verbose_name='Главная картина')\n    img_1 = models.ImageField(upload_to='img', blank=True, null=True, verbose_name='Дополнительная картина')\n    img_2 = models.ImageField(upload_to='img', blank=True, null=True, verbose_name='Дополнительная картина')\n    img_3 = models.ImageField(upload_to='img', blank=True, null=True, verbose_name='Дополнительная картина')\n    img_4 = models.ImageField(upload_to='img', blank=True, null=True, verbose_name='Дополнительная картина')",
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "Reservation",
+        "kind": 6,
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "peekOfCode": "class Reservation(models.Model):\n    arenda = models.ForeignKey(Arenda, on_delete=models.CASCADE, related_name='reservations', verbose_name='объект')\n    arrival = models.DateField(verbose_name='Прибытие')\n    departure = models.DateField(verbose_name='Выезд')\n    full_name = models.CharField(max_length=100, verbose_name='ФИО')\n    phone = models.CharField(max_length=30, verbose_name='Телефон')\n    email = models.EmailField(verbose_name='Почта')\n    preferences = models.TextField(blank=True, null=True, verbose_name='Пожелания')\n    date_created = models.DateTimeField(auto_now_add=True)\n    class Meta:",
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "Applications",
+        "kind": 6,
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "peekOfCode": "class Applications(models.Model):\n    name = models.CharField(max_length=100, verbose_name='Имя')\n    email = models.CharField(max_length=100, verbose_name='Почта')\n    tel = models.CharField(max_length=60, verbose_name='телефон')\n    date_created = models.DateTimeField(auto_now_add=True)\n    class Meta:\n        verbose_name_plural = 'Заявки'\n    def __str__(self):\n        return f'{self.name} - {self.tel}'\nclass Imgmain(models.Model):",
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "Imgmain",
+        "kind": 6,
+        "importPath": "arenda.models",
+        "description": "arenda.models",
+        "peekOfCode": "class Imgmain(models.Model):\n    img_main = models.ImageField(upload_to='img', blank=False, verbose_name='Главная картина')\n    date_created = models.DateTimeField(auto_now_add=True)\n    class Meta:\n        verbose_name_plural = 'Шапка главной страницы'",
+        "detail": "arenda.models",
+        "documentation": {}
+    },
+    {
+        "label": "OwnerTranslationOptions",
+        "kind": 6,
+        "importPath": "arenda.translation",
+        "description": "arenda.translation",
+        "peekOfCode": "class OwnerTranslationOptions(TranslationOptions):\n    fields = ('name_obj', 'description_2')\n@register(Region)\nclass RegionTranslationOptions(TranslationOptions):\n    fields = ('name', 'country')\n@register(Arenda)\nclass ArendaTranslationOptions(TranslationOptions):\n    fields = ('Owner_object', 'name', 'description', 'country', 'region', 'city', 'property_type', \n              'property_type_2', 'Location', 'private_1', 'private_2', 'private_3', 'private_4', 'private_5', \n              'private_6', 'private_7', 'private_8', 'private_9', 'private_10', ",
+        "detail": "arenda.translation",
+        "documentation": {}
+    },
+    {
+        "label": "RegionTranslationOptions",
+        "kind": 6,
+        "importPath": "arenda.translation",
+        "description": "arenda.translation",
+        "peekOfCode": "class RegionTranslationOptions(TranslationOptions):\n    fields = ('name', 'country')\n@register(Arenda)\nclass ArendaTranslationOptions(TranslationOptions):\n    fields = ('Owner_object', 'name', 'description', 'country', 'region', 'city', 'property_type', \n              'property_type_2', 'Location', 'private_1', 'private_2', 'private_3', 'private_4', 'private_5', \n              'private_6', 'private_7', 'private_8', 'private_9', 'private_10', \n              'description_1')\n@register(Sale)\nclass SaleTranslationOptions(TranslationOptions):",
+        "detail": "arenda.translation",
+        "documentation": {}
+    },
+    {
+        "label": "ArendaTranslationOptions",
+        "kind": 6,
+        "importPath": "arenda.translation",
+        "description": "arenda.translation",
+        "peekOfCode": "class ArendaTranslationOptions(TranslationOptions):\n    fields = ('Owner_object', 'name', 'description', 'country', 'region', 'city', 'property_type', \n              'property_type_2', 'Location', 'private_1', 'private_2', 'private_3', 'private_4', 'private_5', \n              'private_6', 'private_7', 'private_8', 'private_9', 'private_10', \n              'description_1')\n@register(Sale)\nclass SaleTranslationOptions(TranslationOptions):\n    fields = ('Owner_object', 'name', 'description', 'city', 'Location', 'description_1')\n@register(Yacht)\nclass YachtTranslationOptions(TranslationOptions):",
+        "detail": "arenda.translation",
+        "documentation": {}
+    },
+    {
+        "label": "SaleTranslationOptions",
+        "kind": 6,
+        "importPath": "arenda.translation",
+        "description": "arenda.translation",
+        "peekOfCode": "class SaleTranslationOptions(TranslationOptions):\n    fields = ('Owner_object', 'name', 'description', 'city', 'Location', 'description_1')\n@register(Yacht)\nclass YachtTranslationOptions(TranslationOptions):\n    fields = ('Owner_object', 'name', 'description', 'engine', 'Location', 'description_1')\n@register(News)\nclass NewsTranslationOptions(TranslationOptions):\n    fields = ('name', 'description', 'description_1')\n@register(Reservation)\nclass ReservationTranslationOptions(TranslationOptions):",
+        "detail": "arenda.translation",
+        "documentation": {}
+    },
+    {
+        "label": "YachtTranslationOptions",
+        "kind": 6,
+        "importPath": "arenda.translation",
+        "description": "arenda.translation",
+        "peekOfCode": "class YachtTranslationOptions(TranslationOptions):\n    fields = ('Owner_object', 'name', 'description', 'engine', 'Location', 'description_1')\n@register(News)\nclass NewsTranslationOptions(TranslationOptions):\n    fields = ('name', 'description', 'description_1')\n@register(Reservation)\nclass ReservationTranslationOptions(TranslationOptions):\n    fields = ('arenda', 'arrival', 'departure', 'full_name', 'preferences')\n@register(Applications)\nclass ApplicationsTranslationOptions(TranslationOptions):",
+        "detail": "arenda.translation",
+        "documentation": {}
+    },
+    {
+        "label": "NewsTranslationOptions",
+        "kind": 6,
+        "importPath": "arenda.translation",
+        "description": "arenda.translation",
+        "peekOfCode": "class NewsTranslationOptions(TranslationOptions):\n    fields = ('name', 'description', 'description_1')\n@register(Reservation)\nclass ReservationTranslationOptions(TranslationOptions):\n    fields = ('arenda', 'arrival', 'departure', 'full_name', 'preferences')\n@register(Applications)\nclass ApplicationsTranslationOptions(TranslationOptions):\n    fields = ('name')",
+        "detail": "arenda.translation",
+        "documentation": {}
+    },
+    {
+        "label": "ReservationTranslationOptions",
+        "kind": 6,
+        "importPath": "arenda.translation",
+        "description": "arenda.translation",
+        "peekOfCode": "class ReservationTranslationOptions(TranslationOptions):\n    fields = ('arenda', 'arrival', 'departure', 'full_name', 'preferences')\n@register(Applications)\nclass ApplicationsTranslationOptions(TranslationOptions):\n    fields = ('name')",
+        "detail": "arenda.translation",
+        "documentation": {}
+    },
+    {
+        "label": "ApplicationsTranslationOptions",
+        "kind": 6,
+        "importPath": "arenda.translation",
+        "description": "arenda.translation",
+        "peekOfCode": "class ApplicationsTranslationOptions(TranslationOptions):\n    fields = ('name')",
+        "detail": "arenda.translation",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "arenda.urls",
+        "description": "arenda.urls",
+        "peekOfCode": "urlpatterns = [\n    path('', views.HomeListView.as_view(), name='index'),\n    path('arenda_page', views.ArendaPageListView.as_view(), name='arenda_page'),\n    path('arenda/<int:pk>/', views.ArendaPageDetailView.as_view(), name='arenda_page_detail'),\n    path('arenda/<int:pk>/reserve/', views.handle_reservation, name='handle_reservation'),\n    path('contact_page', views.contact_page, name='contact_page'),\n    path('post_applications', views.post_applications, name='post_applications'),\n    path('about', views.about, name='about'),\n    path('search_results', views.search_view, name='search_results'),\n    path('news', views.NewsListView.as_view(), name='news'),",
+        "detail": "arenda.urls",
+        "documentation": {}
+    },
+    {
+        "label": "HomeListView",
+        "kind": 6,
+        "importPath": "arenda.views",
+        "description": "arenda.views",
+        "peekOfCode": "class HomeListView(ListView):\n    model = Arenda\n    template_name = 'arenda/index.html'\n    ordering = [\"-date_created\"]\n    paginate_by = 3\n    context_object_name = 'arenda'\n    def get_context_data(self, **kwargs):\n        context = super().get_context_data(**kwargs)\n        context['form'] = ApplicationsForm() \n        context['form2'] = SearchForm() ",
+        "detail": "arenda.views",
+        "documentation": {}
+    },
+    {
+        "label": "ArendaPageListView",
+        "kind": 6,
+        "importPath": "arenda.views",
+        "description": "arenda.views",
+        "peekOfCode": "class ArendaPageListView(ListView):\n    model = Arenda\n    template_name = 'arenda/arenda_page.html'\n    ordering = [\"-date_created\"]\n    context_object_name = 'arenda'\n    paginate_by = 6\n    def get_context_data(self, **kwargs):\n        context = super().get_context_data(**kwargs)\n        context['form'] = ApplicationsForm() \n        context['form2'] = SearchForm() ",
+        "detail": "arenda.views",
+        "documentation": {}
+    },
+    {
+        "label": "ArendaPageDetailView",
+        "kind": 6,
+        "importPath": "arenda.views",
+        "description": "arenda.views",
+        "peekOfCode": "class ArendaPageDetailView(DetailView):\n    model = Arenda\n    template_name = 'arenda/arenda_page_detail.html'\n    def get_context_data(self, **kwargs):\n        context = super().get_context_data(**kwargs)\n        context['form'] = ReservationForm() \n        context['form1'] = ApplicationsForm() \n        context['form2'] = SearchForm() \n        current_arend  = self.get_object()\n        region = current_arend.region",
+        "detail": "arenda.views",
+        "documentation": {}
+    },
+    {
+        "label": "NewsListView",
+        "kind": 6,
+        "importPath": "arenda.views",
+        "description": "arenda.views",
+        "peekOfCode": "class NewsListView(ListView):\n    model = News\n    template_name = 'arenda/news.html'\n    ordering = [\"-date_created\"]\n    paginate_by = 6\n    context_object_name = 'news'\n    def get_context_data(self, **kwargs):\n        context = super().get_context_data(**kwargs)\n        context['form'] = ApplicationsForm() \n        return context",
+        "detail": "arenda.views",
+        "documentation": {}
+    },
+    {
+        "label": "NewsDetailView",
+        "kind": 6,
+        "importPath": "arenda.views",
+        "description": "arenda.views",
+        "peekOfCode": "class NewsDetailView(DetailView):\n    model = News\n    template_name = 'arenda/news_detail.html'\n    def get_context_data(self, **kwargs):\n        context = super().get_context_data(**kwargs)\n        context['form'] = ApplicationsForm() \n        return context\nclass SaleListView(ListView):\n    model = Sale\n    template_name = 'arenda/sale.html'",
+        "detail": "arenda.views",
+        "documentation": {}
+    },
+    {
+        "label": "SaleListView",
+        "kind": 6,
+        "importPath": "arenda.views",
+        "description": "arenda.views",
+        "peekOfCode": "class SaleListView(ListView):\n    model = Sale\n    template_name = 'arenda/sale.html'\n    ordering = [\"-date_created\"]\n    paginate_by = 6\n    context_object_name = 'sale'\n    def get_context_data(self, **kwargs):\n        context = super().get_context_data(**kwargs)\n        context['form'] = ApplicationsForm() \n        context['form2'] = SearchForm() ",
+        "detail": "arenda.views",
+        "documentation": {}
+    },
+    {
+        "label": "SaleDetailView",
+        "kind": 6,
+        "importPath": "arenda.views",
+        "description": "arenda.views",
+        "peekOfCode": "class SaleDetailView(DetailView):\n    model = Sale\n    template_name = 'arenda/sale_detail.html'\n    def get_context_data(self, **kwargs):\n        context = super().get_context_data(**kwargs)\n        context['form'] = ApplicationsForm() \n        context['form2'] = SearchForm() \n        return context\nclass YachtListView(ListView):\n    model = Yacht",
+        "detail": "arenda.views",
+        "documentation": {}
+    },
+    {
+        "label": "YachtListView",
+        "kind": 6,
+        "importPath": "arenda.views",
+        "description": "arenda.views",
+        "peekOfCode": "class YachtListView(ListView):\n    model = Yacht\n    template_name = 'arenda/yacht.html'\n    ordering = [\"-date_created\"]\n    paginate_by = 6\n    context_object_name = 'yacht'\n    def get_context_data(self, **kwargs):\n        context = super().get_context_data(**kwargs)\n        context['form'] = ApplicationsForm() \n        context['form2'] = SearchForm() ",
+        "detail": "arenda.views",
+        "documentation": {}
+    },
+    {
+        "label": "YachDetailView",
+        "kind": 6,
+        "importPath": "arenda.views",
+        "description": "arenda.views",
+        "peekOfCode": "class YachDetailView(DetailView):\n    model = Yacht\n    template_name = 'arenda/yacht_detail.html'\n    def get_context_data(self, **kwargs):\n        context = super().get_context_data(**kwargs)\n        context['form'] = ApplicationsForm() \n        context['form2'] = SearchForm() \n        return context\ndef contact_page(request):\n    form = ApplicationsForm()",
+        "detail": "arenda.views",
+        "documentation": {}
+    },
+    {
+        "label": "search_view",
+        "kind": 2,
+        "importPath": "arenda.views",
+        "description": "arenda.views",
+        "peekOfCode": "def search_view(request):\n    if request.method == 'GET':\n        form = SearchForm(request.GET)\n        if form.is_valid():\n            region = form.cleaned_data.get('region')\n            property_type_2 = form.cleaned_data.get('property_type_2')\n            property_type = form.cleaned_data.get('property_type')\n            rooms = form.cleaned_data.get('rooms')\n            price_min = form.cleaned_data.get('price_min')\n            price_max = form.cleaned_data.get('price_max')",
+        "detail": "arenda.views",
+        "documentation": {}
+    },
+    {
+        "label": "handle_reservation",
+        "kind": 2,
+        "importPath": "arenda.views",
+        "description": "arenda.views",
+        "peekOfCode": "def handle_reservation(request, pk):\n    arenda = get_object_or_404(Arenda, pk=pk)\n    if request.method == 'POST':\n        form = ReservationForm(request.POST)\n        if form.is_valid():\n            reservation = form.save(commit=False)\n            reservation.arenda = arenda\n            reservation.save()\n            messages.success(request, 'Вы забронировали данный объект, скоро свяжемся с Вами, спасибо!')\n            return redirect('arenda_page_detail', pk=arenda.pk)",
+        "detail": "arenda.views",
+        "documentation": {}
+    },
+    {
+        "label": "post_applications",
+        "kind": 2,
+        "importPath": "arenda.views",
+        "description": "arenda.views",
+        "peekOfCode": "def post_applications(request):\n    form = ApplicationsForm()\n    if request.method == 'POST':\n        form = ApplicationsForm(request.POST)\n        if form.is_valid():\n            post_app = form.save(commit=False)\n            post_app.save()\n            messages.success(request, 'Вы оставили заявку, скоро свяжемся с Вами, спаибо!')\n            return redirect('index')\n    return redirect('about')",
+        "detail": "arenda.views",
+        "documentation": {}
+    },
+    {
+        "label": "contact_page",
+        "kind": 2,
+        "importPath": "arenda.views",
+        "description": "arenda.views",
+        "peekOfCode": "def contact_page(request):\n    form = ApplicationsForm()\n    return render(request, 'arenda/contact_page.html', {'form': form})\ndef about(request):\n    form = ApplicationsForm()\n    return render(request, 'arenda/about.html', {'form': form})",
+        "detail": "arenda.views",
+        "documentation": {}
+    },
+    {
+        "label": "about",
+        "kind": 2,
+        "importPath": "arenda.views",
+        "description": "arenda.views",
+        "peekOfCode": "def about(request):\n    form = ApplicationsForm()\n    return render(request, 'arenda/about.html', {'form': form})",
+        "detail": "arenda.views",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "main.asgi",
+        "description": "main.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "main.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "main.settings",
+        "description": "main.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-mw9t+i3k+e**+ropplvtrldf@ec84fn53wskjl@8*)v$4r@jb5'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "main.settings",
+        "description": "main.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-mw9t+i3k+e**+ropplvtrldf@ec84fn53wskjl@8*)v$4r@jb5'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "main.settings",
+        "description": "main.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "main.settings",
+        "description": "main.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'arenda',",
+        "detail": "main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "main.settings",
+        "description": "main.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'arenda',\n    \"bootstrap4\",\n]",
+        "detail": "main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "main.settings",
+        "description": "main.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.locale.LocaleMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]",
+        "detail": "main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "main.settings",
+        "description": "main.settings",
+        "peekOfCode": "ROOT_URLCONF = 'main.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "main.settings",
+        "description": "main.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "main.settings",
+        "description": "main.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'main.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/4.2/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "detail": "main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "main.settings",
+        "description": "main.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "main.settings",
+        "description": "main.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "main.settings",
+        "description": "main.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us' \nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\nLANGUAGE_CODE = 'en' \nLANGUAGES = [\n    ('en', _('English')),\n    ('ru', _('Russian')),\n]",
+        "detail": "main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "main.settings",
+        "description": "main.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\nLANGUAGE_CODE = 'en' \nLANGUAGES = [\n    ('en', _('English')),\n    ('ru', _('Russian')),\n]\nLOCALE_PATHS = [",
+        "detail": "main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "main.settings",
+        "description": "main.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\nLANGUAGE_CODE = 'en' \nLANGUAGES = [\n    ('en', _('English')),\n    ('ru', _('Russian')),\n]\nLOCALE_PATHS = [\n    os.path.join(BASE_DIR, 'locale'),",
+        "detail": "main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_L10N",
+        "kind": 5,
+        "importPath": "main.settings",
+        "description": "main.settings",
+        "peekOfCode": "USE_L10N = True\nUSE_TZ = True\nLANGUAGE_CODE = 'en' \nLANGUAGES = [\n    ('en', _('English')),\n    ('ru', _('Russian')),\n]\nLOCALE_PATHS = [\n    os.path.join(BASE_DIR, 'locale'),\n]",
+        "detail": "main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "main.settings",
+        "description": "main.settings",
+        "peekOfCode": "USE_TZ = True\nLANGUAGE_CODE = 'en' \nLANGUAGES = [\n    ('en', _('English')),\n    ('ru', _('Russian')),\n]\nLOCALE_PATHS = [\n    os.path.join(BASE_DIR, 'locale'),\n]\nLANGUAGE_SESSION_KEY = '_language'",
+        "detail": "main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "main.settings",
+        "description": "main.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en' \nLANGUAGES = [\n    ('en', _('English')),\n    ('ru', _('Russian')),\n]\nLOCALE_PATHS = [\n    os.path.join(BASE_DIR, 'locale'),\n]\nLANGUAGE_SESSION_KEY = '_language'\n# from django.utils.translation import gettext_lazy as _",
+        "detail": "main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGES",
+        "kind": 5,
+        "importPath": "main.settings",
+        "description": "main.settings",
+        "peekOfCode": "LANGUAGES = [\n    ('en', _('English')),\n    ('ru', _('Russian')),\n]\nLOCALE_PATHS = [\n    os.path.join(BASE_DIR, 'locale'),\n]\nLANGUAGE_SESSION_KEY = '_language'\n# from django.utils.translation import gettext_lazy as _\n# Static files (CSS, JavaScript, Images)",
+        "detail": "main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LOCALE_PATHS",
+        "kind": 5,
+        "importPath": "main.settings",
+        "description": "main.settings",
+        "peekOfCode": "LOCALE_PATHS = [\n    os.path.join(BASE_DIR, 'locale'),\n]\nLANGUAGE_SESSION_KEY = '_language'\n# from django.utils.translation import gettext_lazy as _\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = (\n    os.path.join(BASE_DIR, 'static'),",
+        "detail": "main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_SESSION_KEY",
+        "kind": 5,
+        "importPath": "main.settings",
+        "description": "main.settings",
+        "peekOfCode": "LANGUAGE_SESSION_KEY = '_language'\n# from django.utils.translation import gettext_lazy as _\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/4.2/howto/static-files/\nSTATIC_URL = 'static/'\nSTATICFILES_DIRS = (\n    os.path.join(BASE_DIR, 'static'),\n)\nMEDIA_URL = '/media/'\nMEDIA_ROOT = BASE_DIR / 'media'",
+        "detail": "main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "main.settings",
+        "description": "main.settings",
+        "peekOfCode": "STATIC_URL = 'static/'\nSTATICFILES_DIRS = (\n    os.path.join(BASE_DIR, 'static'),\n)\nMEDIA_URL = '/media/'\nMEDIA_ROOT = BASE_DIR / 'media'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATICFILES_DIRS",
+        "kind": 5,
+        "importPath": "main.settings",
+        "description": "main.settings",
+        "peekOfCode": "STATICFILES_DIRS = (\n    os.path.join(BASE_DIR, 'static'),\n)\nMEDIA_URL = '/media/'\nMEDIA_ROOT = BASE_DIR / 'media'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_URL",
+        "kind": 5,
+        "importPath": "main.settings",
+        "description": "main.settings",
+        "peekOfCode": "MEDIA_URL = '/media/'\nMEDIA_ROOT = BASE_DIR / 'media'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MEDIA_ROOT",
+        "kind": 5,
+        "importPath": "main.settings",
+        "description": "main.settings",
+        "peekOfCode": "MEDIA_ROOT = BASE_DIR / 'media'\n# Default primary key field type\n# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "main.settings",
+        "description": "main.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "main.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "main.urls",
+        "description": "main.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    # path(r'^i18n/', include('django.conf.urls.i18n')),\n    path('', include(\"arenda.urls\")),\n]\nurlpatterns += i18n_patterns (\n    path('', include(\"arenda.urls\")),\n)\nif settings.DEBUG:\n    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)",
+        "detail": "main.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "main.wsgi",
+        "description": "main.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "main.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "manage",
+        "description": "manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'main.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "manage",
+        "documentation": {}
+    }
+]

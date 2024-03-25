@@ -1,0 +1,329 @@
+{% extends 'arenda/base.html' %}
+{% load i18n %}
+{% load static %}
+{% load bootstrap4 %}
+{% block content %}  
+
+<style>
+    .img-index {
+        height: 100%;
+        background-image: url('{{ img.0.img_main.url }}');
+        /* {% for img_instance in img %}
+            background-image: url('{{ img_instance.img_main.url }}');
+        {% endfor %} */
+    }
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="text-center">
+            <div class="text-center img-index"><br><br>
+                <h2 class="color-text">{% trans 'RENT' %}</h2><br>
+                <h3 class="color-text">{% trans 'OF PREMIUM REAL ESTATE' %}</h3>                
+                
+                <h3 class="margin-up"></h3>
+                <form method="GET" action="{% url 'search_results' %}">
+                    {% csrf_token %}
+                    <div class="container form-line">
+                        <div class="form-group form-line">
+                            {{ form2.region }}
+                        </div>
+                        <div class="form-group form-line">
+                            {{ form2.property_type }}
+                        </div>
+                        <div class="form-group form-line">
+                            {{ form2.property_type_2 }}
+                        </div>
+                        <div class="form-group form-line">
+                            {{ form2.rooms }}
+                        </div>
+                        <div class="form-group form-line">
+                            {{ form2.price_min }}
+                        </div>
+                        <div class="form-group form-line">
+                            <button type="submit" class="btn btn-color">{% trans 'Search' %}</button>
+                        </div>
+                    </div>
+                </form><br><br>
+
+                <h3 class="margin-up-1"></h3>
+            </div>
+
+        </div>
+    </div><br><br>
+    <h2 class="text-center color-title">{% trans 'Advantages of working with us' %}</h2><br><br><br>
+
+    <div class="card-group">
+
+        <div class="card input-serach">
+            <svg class="card-img-top" width="50" height="48" viewBox="0 0 20 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.56915 14.5351H6.43106C4.64327 14.5351 3.18887 13.0808 3.18887 11.2931C3.18887 9.50527 4.64336 8.05087 6.43106 8.05087H12.7071C13.5161 8.05087 14.172 7.39501 14.172 6.58603C14.172 5.77704 13.5161 5.12118 12.7071 5.12118H9.46495V1.879C9.46495 1.07001 8.80909 0.414154 8.0001 0.414154C7.19112 0.414154 6.53526 1.07001 6.53526 1.879V5.12118H6.43116C3.02793 5.12118 0.259277 7.88993 0.259277 11.2931C0.259277 14.6962 3.02803 17.4648 6.43116 17.4648H9.56924C11.3569 17.4648 12.8113 18.9193 12.8113 20.707C12.8113 22.4947 11.3569 23.9492 9.56924 23.9492H3.29317C2.48418 23.9492 1.82832 24.6051 1.82832 25.4141C1.82832 26.223 2.48418 26.8789 3.29317 26.8789H6.53526V30.1212C6.53526 30.9302 7.19112 31.586 8.0001 31.586C8.80909 31.586 9.46495 30.9302 9.46495 30.1212V26.8789H9.56915C12.9723 26.8789 15.7409 24.1101 15.7409 20.707C15.7409 17.3039 12.9723 14.5351 9.56915 14.5351Z" fill="#004E62"/>
+            </svg>   
+          <div class="card-body">
+            <h3 class="text-center">{% trans 'Owner Price' %}</h3>
+            <p class="text-center">{% trans 'Most villas featured on the website are presented with the owner price. We work directly with owners without intermediaries.' %}</p>            
+          </div>
+        </div>
+
+        <div class="card input-serach">
+            <svg class="card-img-top" width="50" height="48" viewBox="0 0 50 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M49.1602 21.352L44.9363 17.5032V4.74122C44.9363 3.92921 44.278 3.27081 43.4659 3.27081H33.2984C32.4864 3.27081 31.828 3.92911 31.828 4.74122V5.559L26.7268 0.910852C25.7422 0.0134888 24.2573 0.0135865 23.273 0.910754L0.839634 21.3521C0.0509617 22.0708 -0.209683 23.1782 0.175669 24.1732C0.561118 25.1683 1.49959 25.8111 2.56668 25.8111H6.14959V46.2917C6.14959 47.1037 6.8079 47.7621 7.62001 47.7621H19.9162C20.7282 47.7621 21.3866 47.1038 21.3866 46.2917V33.8565H28.6133V46.2918C28.6133 47.1038 29.2716 47.7622 30.0837 47.7622H42.3794C43.1914 47.7622 43.8498 47.1039 43.8497 46.2918V25.8112H47.4334C48.5004 25.8112 49.439 25.1683 49.8244 24.1733C50.2097 23.1782 49.9491 22.0708 49.1602 21.352ZM42.3794 22.8704C41.5674 22.8704 40.909 23.5287 40.909 24.3408V44.8214H31.5542V32.3861C31.5542 31.5741 30.8958 30.9157 30.0838 30.9157H19.9162C19.1042 30.9157 18.4458 31.574 18.4458 32.3861V44.8214H9.09032V24.3408C9.09032 23.5288 8.43202 22.8704 7.61991 22.8704H3.53954L25.0001 3.31573L32.3083 9.97501C32.7388 10.3672 33.3601 10.4683 33.8927 10.2332C34.4253 9.99786 34.7689 9.47032 34.7689 8.8881V6.21163H41.9957V18.1526C41.9957 18.5664 42.1699 18.9608 42.4758 19.2396L46.4604 22.8704H42.3794Z" fill="#004E62"/>
+            </svg> 
+          <div class="card-body">
+            <h3 class="text-center">{% trans 'Preview Showing' %}</h3>
+            <p class="text-center">{% trans 'We offer preview showings of villas located in Sardinia.' %}</p>            
+          </div>
+        </div>
+
+        <div class="card input-serach">
+          <svg class="card-img-top" width="50" height="48" viewBox="0 0 50 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 20.5952L17.1222 37.75L50 4.90473L45.2799 0.249847L17.1222 28.3748L4.65478 15.9075L0 20.5952Z" fill="#004E62"/>
+            </svg>
+          <div class="card-body">
+            <h3 class="text-center">{% trans 'Quality' %}</h3>
+            <p class="text-center">{% trans 'Villas showcased on the website represent exclusively the luxury segment of real estate rental.' %}</p>            
+          </div>
+
+        </div>
+      </div><br>
+      <h2 class="text-center color-title">{% trans 'New Arrivals' %}</h2><br>
+        
+      <section id="gallery">
+            <div class="container">
+                <div class="row">
+                    {% for arend in arenda %}
+                        <div class="col-lg-4 mb-4">
+                            <div class="card">
+                                <a href="{% url 'arenda_page_detail' arend.pk %}"><img src="{{ arend.img_main.url }}" alt="" class="card-img-top img-heghit"></a>
+                                <div class="card-body">
+                                    {% if 'ru' in request.path %}
+                                        <p class="card-text">{{ arend.description|truncatechars:100 }}</p>
+                                    {% else %}
+                                        <p class="card-text">{{ arend.description_en|truncatechars:100 }}</p>
+                                    {% endif %}
+                                    <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                                    </svg> {{ arend.region}} &nbsp;
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+                                        <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+                                    </svg> {{ arend.people }} &nbsp;
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-usb-mini-fill" viewBox="0 0 16 16">
+                                        <path d="M3 3a1 1 0 0 0-1 1v1.293L.293 7A1 1 0 0 0 0 7.707V12a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V7.707A1 1 0 0 0 15.707 7L14 5.293V4a1 1 0 0 0-1-1H3Zm.5 5h9a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5Z"/>
+                                    </svg> {% if arend.rooms %} {{ arend.rooms }} {% endif %} &nbsp;
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-droplet-half" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M7.21.8C7.69.295 8 0 8 0c.109.363.234.708.371 1.038.812 1.946 2.073 3.35 3.197 4.6C12.878 7.096 14 8.345 14 10a6 6 0 0 1-12 0C2 6.668 5.58 2.517 7.21.8zm.413 1.021A31.25 31.25 0 0 0 5.794 3.99c-.726.95-1.436 2.008-1.96 3.07C3.304 8.133 3 9.138 3 10c0 0 2.5 1.5 5 .5s5-.5 5-.5c0-1.201-.796-2.157-2.181-3.7l-.03-.032C9.75 5.11 8.5 3.72 7.623 1.82z"/>
+                                        <path fill-rule="evenodd" d="M4.553 7.776c.82-1.641 1.717-2.753 2.093-3.13l.708.708c-.29.29-1.128 1.311-1.907 2.87z"/>
+                                    </svg> {% if arend.showe %}  {{ arend.shower }} {% endif %} &nbsp;
+                                    </p>
+
+                                    <b class="btn color-title b-text-position">{% trans 'from' %} {{ arend.price_min }} €<br><h6 class="fon-size-min">{% trans 'per week' %}</h6></b>
+                                </div>
+                                <div class="button-fix-right">
+                                    <a href="{% url 'arenda_page_detail' arend.pk %}" class="btn btn-color  btn-sm ">{% trans 'More details' %}</a>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+
+                </div>   
+            </div>
+        </section><br><br>
+
+        <h2 class="text-center color-title">{% trans 'VIP Offer' %}</h2><br>
+        
+        <section id="gallery">
+              <div class="container">
+                  <div class="row">
+
+                      {% for arend in filtered_arends %}
+                          <div class="col-lg-4 mb-4">
+                              <div class="card">
+                                  <a href="{% url 'arenda_page_detail' arend.pk %}"><img src="{{ arend.img_main.url }}" alt="" class="card-img-top img-heghit"></a>
+                                  <div class="card-body">
+                                        {% if 'ru' in request.path %}
+                                            <p class="card-text">{{ arend.description|truncatechars:100 }}</p>
+                                        {% else %}
+                                            <p class="card-text">{{ arend.description_en|truncatechars:100 }}</p>
+                                        {% endif %}
+                                      <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                          <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                                          <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                                      </svg> {{ arend.region}} &nbsp;
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+                                          <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+                                      </svg> {{ arend.people }} &nbsp;
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-usb-mini-fill" viewBox="0 0 16 16">
+                                            <path d="M3 3a1 1 0 0 0-1 1v1.293L.293 7A1 1 0 0 0 0 7.707V12a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V7.707A1 1 0 0 0 15.707 7L14 5.293V4a1 1 0 0 0-1-1H3Zm.5 5h9a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5Z"/>
+                                        </svg> {% if arend.rooms %} {{ arend.rooms }} {% endif %} &nbsp;
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-droplet-half" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M7.21.8C7.69.295 8 0 8 0c.109.363.234.708.371 1.038.812 1.946 2.073 3.35 3.197 4.6C12.878 7.096 14 8.345 14 10a6 6 0 0 1-12 0C2 6.668 5.58 2.517 7.21.8zm.413 1.021A31.25 31.25 0 0 0 5.794 3.99c-.726.95-1.436 2.008-1.96 3.07C3.304 8.133 3 9.138 3 10c0 0 2.5 1.5 5 .5s5-.5 5-.5c0-1.201-.796-2.157-2.181-3.7l-.03-.032C9.75 5.11 8.5 3.72 7.623 1.82z"/>
+                                            <path fill-rule="evenodd" d="M4.553 7.776c.82-1.641 1.717-2.753 2.093-3.13l.708.708c-.29.29-1.128 1.311-1.907 2.87z"/>
+                                        </svg> {% if arend.showe %}  {{ arend.shower }} {% endif %} &nbsp;
+                                      </p>
+  
+                                      <b class="btn color-title b-text-position">от {{ arend.price_min }} €<br><h6 class="fon-size-min">{% trans 'per week' %}</h6></b>
+                                  </div>
+                                  <div class="button-fix-right">
+                                      <a href="{% url 'arenda_page_detail' arend.pk %}" class="btn btn-color  btn-sm ">{% trans 'More details' %}</a>
+                                  </div>
+                              </div>
+                          </div>
+                      {% endfor %}
+  
+                  </div>   
+              </div>
+          </section><br><br>
+            <h2 class="text-center color-title">{% trans 'Popular destinations' %}</h2>
+        
+            <div class="container">
+
+                <div class="container">
+                    <div class="row p-1 justify-content-center">
+                        <div class="col-md-auto">
+                            {% for count in country %}
+                                {% if count.popular %}
+                                    <form method="GET" action="{% url 'search_results' %}" class=" form-line_bb">
+                                        {% csrf_token %}
+                                        <input type="hidden" name="region" value="{{ count.id }}">
+                                        <div style="display: none;">
+                                            {{ form2.property_type_2 }}
+                                        </div>
+                                        <div style="display: none;">
+                                            {{ form2.property_type }}
+                                        </div>    
+                                        <div class="p-1"> 
+                                            {% if 'ru' in request.path %}
+                                                <button type="submit" class="mm_bb">{{ count }}</button>
+                                                <img src="{{ count.img.url }}" alt="img">
+                                            {% else %}
+                                                <button type="submit" class="mm_bb">{{ count.name_en }}</button>
+                                                <img src="{{ count.img.url }}" alt="img">
+                                            {% endif %}
+                                        </div>
+                                    </form>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row p-1 justify-content-center">
+                        <div class="col-md-auto">
+                            {% for count in city %}
+                                {% if count.popular %}
+                                    <form method="GET" action="{% url 'search_results' %}" class="form-line_bb ">
+                                        {% csrf_token %}
+                                        <input type="hidden" name="region" value="{{ count.id }}">
+                                        <div style="display: none;">
+                                            {{ form2.property_type_2 }}
+                                        </div>
+                                        <div style="display: none;">
+                                            {{ form2.property_type }}
+                                        </div>     
+                                        <div class="p-1"> 
+                                            {% if 'ru' in request.path %}
+                                                <button type="submit" class="mm_bb">{{ count }}</button>
+                                            {% else %}
+                                                <button type="submit" class="mm_bb">{{ count.name_en }}</button>
+                                            {% endif %}
+                                        </div>
+                                    </form>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        {% for count in region %}
+                            {% if count.popular %}
+                                <div class="col-md-4">
+                                    <form method="GET" action="{% url 'search_results' %}" class="form-line_bb">
+                                        {% csrf_token %}
+                                        <input type="hidden" name="region" value="{{ count.id }}">
+                                        <div style="display: none;">
+                                            {{ form2.property_type_2 }}
+                                        </div>
+                                        <div style="display: none;">
+                                            {{ form2.property_type }}
+                                        </div>
+                                        <div class="image-container">
+                                            <button type="submit" class="bbb_1">
+                                                <img src="{{ count.img.url }}" alt="img">
+                                            </button>
+                                            <div class="image-text">
+                                                {% if 'ru' in request.path %}
+                                                <button type="submit" class="bbb">
+                                                    {{ count }}
+                                                </button>
+                                                {% else %}
+                                                <button type="submit" class="bbb">
+                                                    {{ count.name_en }}
+                                                </button>
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            {% endif %}
+                            {% if forloop.counter|divisibleby:4 and not forloop.last %}
+                                </div><div class="row">
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+                
+            </div><br><br>
+
+          <div class="row m-1" id="contact">
+            <div class="text-left">
+                <div class="text-left p-5 img-index-contact"><br><br>
+                    <h2 class="color-text">{% trans 'Leave an Inquiry' %}</h2><br>
+                    <h4 class="color-text">{% trans 'And we will help you find' %}</h4>
+                    <h4 class="color-text">{% trans 'comfortable accommodation for you' %}</h4><br>
+        
+                    <form method="post" action="{% url 'post_applications'%}">
+                        {% csrf_token %}
+                        <div class="form-line">
+                            <input class="input-widgt" name="name" type="text" placeholder="{% trans 'Your name' %}" required>
+                        </div>
+                        <div class="form-line">
+                            <input class="input-widgt" name="email" type="email" placeholder="{% trans 'Email' %}" required>
+                        </div>
+                        <div class="form-line">
+                            <input class="input-widgt" name="tel" type="number" placeholder="{% trans 'Phone' %}" required>
+                        </div><br><br>
+                        <div class="form-group">
+                            <input class="btn btn-color" type="submit" value="{% trans 'Send Inquiry' %}"><br>
+                        </div>
+                    </form><br> 
+                </div>
+            </div>
+        </div><br>
+        
+
+        <h2 class="text-center color-title">{% trans 'Contacts' %}</h2><br>
+
+        <div class="row m-1" id="but">
+            <div class="text-left">
+                <div class="text-left p-5 img-index-maps"><br><br>
+                    <div class="maps-widgh">
+                        <h4>{% trans 'Contact Us' %}</h4>
+
+                        <p>{% trans 'Office in Italy, Olbia, Via Pisa, 30' %}</p>
+                        <p>{% trans 'Office in Russia, Moscow, ul. Okskaya d. 5 k.1' %}</p>
+                        <p><a href="mailto:info@samokhingroup.com">info@samokhingroup.com</a></p>
+                        <p><a href="https://wa.me/+393318654167"><i class="bi-whatsapp" style="color:green; font-size:25px;"></i> +39 331 865 4167 (Italy)</a></p>
+                        <p><a href="tel:+79652437557"> +7 965 243 75 57 (Russia)</a></p>
+                    </div><br>
+                </div>
+            </div>
+        </div><br>
+
+    </div>
+      
+</div><br>
+{% endblock content %}

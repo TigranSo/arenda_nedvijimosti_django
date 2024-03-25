@@ -1,0 +1,51 @@
+{% extends 'arenda/base.html' %}
+{% load i18n %}
+{% load static %}
+{% block content %}  
+
+<div class="container">
+    <h2 class="text-left color-title">{% trans 'Contacts' %}</h2><br>
+
+    <div class="row m-1" id="but">
+        <div class="text-left">
+            <div class="text-left p-5 img-index-maps"><br><br>
+                <div class="maps-widgh">
+                    <h4>{% trans 'Contact Us' %}</h4>
+
+                    <p>{% trans 'Office in Italy, Olbia, Via Pisa, 30' %}</p>
+                    <p>{% trans 'Office in Russia, Moscow, ul. Okskaya d. 5 k.1' %}</p>
+                    <p><a href="mailto:info@samokhingroup.com">info@samokhingroup.com</a></p>
+                    <p><a href="https://wa.me/+393318654167"><i class="bi-whatsapp" style="color:green; font-size:25px;"></i> +39 331 865 4167 (Italy)</a></p>
+                    <p><a href="tel:+79652437557"> +7 965 243 75 57 (Russia)</a></p>
+                </div><br>
+            </div>
+        </div>
+    </div><br>
+    
+    <div class="row m-1" id="contact">
+        <div class="text-left">
+            <div class="text-left p-5 img-index-contact"><br><br>
+                <h2 class="color-text">{% trans 'Leave an Inquiry' %}</h2><br>
+                <h4 class="color-text">{% trans 'And we will help you find' %}</h4>
+                <h4 class="color-text">{% trans 'comfortable accommodation for you' %}</h4><br>
+    
+                <form method="post" action="{% url 'post_applications'%}">
+                    {% csrf_token %}
+                    <div class="form-line">
+                        <input class="input-widgt" name="name" type="text" placeholder="{% trans 'Your name' %}" required>
+                    </div>
+                    <div class="form-line">
+                        <input class="input-widgt" name="email" type="email" placeholder="{% trans 'Email' %}" required>
+                    </div>
+                    <div class="form-line">
+                        <input class="input-widgt" name="tel" type="number" placeholder="{% trans 'Phone' %}" required>
+                    </div><br><br>
+                    <div class="form-group">
+                        <input class="btn btn-color" type="submit" value="{% trans 'Send Inquiry' %}"><br>
+                    </div>
+                </form><br> 
+            </div>
+        </div>
+    </div><br>
+</div>
+{% endblock content %}                                    

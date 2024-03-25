@@ -1,0 +1,120 @@
+{% extends 'arenda/base.html' %}
+{% load i18n %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+    <h2 class="text-left color-title">{% trans 'About Us' %}</h2><br>
+    <div class="row align-items-center">
+        <div class="col-lg-8 mb-2 order-lg-1">
+            <h3>{% trans 'Welcome to Samokhin Group - your trusted partner in the world of holiday rentals!' %}</h3>
+            <p>{% trans 'For over 18 years, we have been pioneers in the field of residential property rentals. With us, you can enjoy vacations in the finest corners of the world, whether it s a chalet in Austria, a villa in Sardinia, or a cottage in England.' %}</p>
+            <p>{% trans 'Our company offers thousands of accommodation options, including villas, apartments, cottages, and country houses. Thanks to our direct collaboration with property owners, you can rest assured of no commissions or unnecessary hassle during the booking process.' %}</p>
+            <p>{% trans 'We take pride in working without intermediaries, ensuring maximum comfort and reliability for our clients. As an additional option for renting luxury villas, we offer property previews or video materials for viewing.' %}</p>
+            <p>{% trans 'With years of experience and close collaboration with homeowners, we ve unlocked the doors to unique properties available exclusively through our company. Enjoy your dream vacation in exclusive homes selected just for you!' %}</p>
+        </div>
+        <div class="col-lg-4 mb-2 order-lg-2">
+            <img src="{% static '/images/logo_black.png' %}" alt="logo_black">
+        </div>
+    </div><br>
+
+    <h2 class="text-left color-title">{% trans 'Our Team' %}</h2><br>
+
+    <div class="card-group ">
+    
+        <div class="card p-2 m-2">
+            <img src="{% static '/images/image 5.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title m-0"><b>{% trans 'Lyudmila' %}</b></h5>
+                <p>{% trans 'Senior Manager' %}</p>
+                <p class="card-text m-0">+7 965 243 75 57</p>
+                <p class="card-text"><small class="text-muted">info@samokhingroup.com</small></p>
+            </div>
+        </div>
+    
+        <div class="card p-2 m-2" style="visibility: hidden;">
+            <img src="{% static '/images/image 5.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title m-0"><b>{% trans 'Yuliya Ivanovna Ivanova' %}</b></h5>
+                <p>{% trans 'Company Director' %}</p>
+                <p class="card-text m-0 ">+7 (985) 725 - 69 - 98</p>
+                <p class="card-text"><small class="text-muted">support@site.ru </small></p>
+            </div>
+        </div>
+    
+        <div class="card p-2 m-2" style="visibility: hidden;">
+            <img src="{% static '/images/image 5.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title m-0"><b>{% trans 'Lyudmila' %}</b></h5>
+                <p>{% trans 'Senior Manager' %}</p>
+                <p class="card-text m-0">+7 965 243 75 57</p>
+                <p class="card-text"><small class="text-muted">info@samokhingroup.com</small></p>
+            </div>
+        </div>
+    </div><br>
+    
+    <h2 class="text-left color-title">{% trans 'Our Partners' %}</h2><br>
+
+    <div class="partner-logos text-center ">
+        <button id="scroll-left"><span> &#x25C1;</span></button>
+        <div class="partner-container  m-4">
+            <div class="partner-item">
+                <img src="{% static '/images/breand.png' %}" alt="Партнер 1">
+            </div>
+            <div class="partner-item" style="visibility: hidden;">
+                <img src="{% static '/images/breand.png' %}" alt="Партнер 2">
+            </div>
+            <div class="partner-item" style="visibility: hidden;">
+                <img src="{% static '/images/breand.png' %}" alt="Партнер 3">
+            </div>
+            <div class="partner-item" style="visibility: hidden;">
+                <img src="{% static '/images/breand.png' %}" alt="Партнер 4">
+            </div>
+        </div><br>
+        <button id="scroll-right"><span> &#x25B7;</span></button>
+    </div><br><br>
+        
+    <div class="row m-1" id="contact">
+        <div class="text-left">
+            <div class="text-left p-5 img-index-contact"><br><br>
+                <h2 class="color-text">{% trans 'Leave an Inquiry' %}</h2><br>
+                <h4 class="color-text">{% trans 'And we will help you find' %}</h4>
+                <h4 class="color-text">{% trans 'comfortable accommodation for you' %}</h4><br>
+    
+                <form method="post" action="{% url 'post_applications'%}">
+                    {% csrf_token %}
+                    <div class="form-line">
+                        <input class="input-widgt" name="name" type="text" placeholder="{% trans 'Your name' %}" required>
+                    </div>
+                    <div class="form-line">
+                        <input class="input-widgt" name="email" type="email" placeholder="{% trans 'Email' %}" required>
+                    </div>
+                    <div class="form-line">
+                        <input class="input-widgt" name="tel" type="number" placeholder="{% trans 'Phone' %}" required>
+                    </div><br><br>
+                    <div class="form-group">
+                        <input class="btn btn-color" type="submit" value="{% trans 'Send Inquiry' %}"><br>
+                    </div>
+                </form><br> 
+            </div>
+        </div>
+    </div><br>
+    
+    <div class="row m-1" id="but">
+        <div class="text-left">
+            <div class="text-left p-5 img-index-maps"><br><br>
+                <div class="maps-widgh">
+                    <h4>{% trans 'Contact Us' %}</h4>
+
+                    <p>{% trans 'Office in Italy, Olbia, Via Pisa, 30' %}</p>
+                    <p>{% trans 'Office in Russia, Moscow, ul. Okskaya d. 5 k.1' %}</p>
+                    <p><a href="mailto:info@samokhingroup.com">info@samokhingroup.com</a></p>
+                    <p><a href="https://wa.me/+393318654167"><i class="bi-whatsapp" style="color:green; font-size:25px;"></i> +39 331 865 4167 (Italy)</a></p>
+                    <p><a href="tel:+79652437557"> +7 965 243 75 57 (Russia)</a></p>
+                </div><br>
+            </div>
+        </div>
+    </div><br>
+    
+</div>
+{% endblock content %}                                    

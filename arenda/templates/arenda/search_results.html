@@ -1,0 +1,178 @@
+{% extends 'arenda/base.html' %}
+{% load i18n %}
+{% load static %}
+{% block content %}  
+
+<div class="container">
+    <h2 class="text-left color-title">{% trans 'Search Results' %}</h2><br>
+
+    <section id="gallery">
+        <div class="container">
+            <div class="row">
+                
+                {% if not results_arenda and not results_sale and not results_yacht %}
+                    <p>{% trans 'No results to display.' %}</p>
+                {% else %}
+                    {% if results_arenda  %}
+                        {% for arend in results_arenda %}
+                            <div class="col-lg-4 mb-4">
+                                <div class="card">
+                                    <a href="{% url 'arenda_page_detail' arend.pk %}"><img src="{{ arend.img_main.url }}" alt="" class="card-img-top img-heghit"></a>
+                                    <div class="card-body">
+                                        {% if 'ru' in request.path %}
+                                            <p class="card-text">{{ arend.description|truncatechars:100 }}</p>
+                                        {% else %}
+                                            <p class="card-text">{{ arend.description_en|truncatechars:100 }}</p>
+                                        {% endif %}
+                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                                        </svg> {{ arend.region}} &nbsp;
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+                                            <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+                                        </svg> {{ arend.people }} &nbsp;
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-usb-mini-fill" viewBox="0 0 16 16">
+                                            <path d="M3 3a1 1 0 0 0-1 1v1.293L.293 7A1 1 0 0 0 0 7.707V12a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V7.707A1 1 0 0 0 15.707 7L14 5.293V4a1 1 0 0 0-1-1H3Zm.5 5h9a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5Z"/>
+                                        </svg> {% if arend.rooms %} {{ arend.rooms }} {% endif %} &nbsp;
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-droplet-half" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M7.21.8C7.69.295 8 0 8 0c.109.363.234.708.371 1.038.812 1.946 2.073 3.35 3.197 4.6C12.878 7.096 14 8.345 14 10a6 6 0 0 1-12 0C2 6.668 5.58 2.517 7.21.8zm.413 1.021A31.25 31.25 0 0 0 5.794 3.99c-.726.95-1.436 2.008-1.96 3.07C3.304 8.133 3 9.138 3 10c0 0 2.5 1.5 5 .5s5-.5 5-.5c0-1.201-.796-2.157-2.181-3.7l-.03-.032C9.75 5.11 8.5 3.72 7.623 1.82z"/>
+                                            <path fill-rule="evenodd" d="M4.553 7.776c.82-1.641 1.717-2.753 2.093-3.13l.708.708c-.29.29-1.128 1.311-1.907 2.87z"/>
+                                        </svg> {% if arend.showe %}  {{ arend.shower }} {% endif %} &nbsp;
+                                        </p>
+
+                                        <b class="btn color-title b-text-position">{% trans 'from' %} {{ arend.price_min }} €<br><h6 class="fon-size-min">{% trans 'per week' %}</h6></b>
+                                    </div>
+                                    <div class="button-fix-right">
+                                        <a href="{% url 'arenda_page_detail' arend.pk %}" class="btn btn-color btn-sm ">{% trans 'More details' %}</a>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    {% else %}
+                        
+                    {% endif %}
+                    
+                    {% if results_sale  %}
+                        {% for sal in results_sale %}
+                            <div class="col-lg-4 mb-4">
+                                <div class="card">
+                                    <a href="{% url 'sale_detail' sal.pk %}">
+                                        <img src="{{ sal.img_main.url }}" alt="" class="card-img-top">
+                                    </a>
+                                    <div class="card-body">
+                                        {% if 'ru' in request.path %}
+                                            <p class="card-text">{{ sal.description|truncatechars:100 }}</p>
+                                        {% else %}
+                                            <p class="card-text">{{ sal.description_en|truncatechars:100 }}</p>
+                                        {% endif %}
+                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                                        </svg> {{ sal.region}} &nbsp;
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-usb-mini-fill" viewBox="0 0 16 16">
+                                            <path d="M3 3a1 1 0 0 0-1 1v1.293L.293 7A1 1 0 0 0 0 7.707V12a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V7.707A1 1 0 0 0 15.707 7L14 5.293V4a1 1 0 0 0-1-1H3Zm.5 5h9a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5Z"/>
+                                        </svg> {% if sal.rooms %}{{ sal.rooms }}{% endif %} &nbsp;
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-droplet-half" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M7.21.8C7.69.295 8 0 8 0c.109.363.234.708.371 1.038.812 1.946 2.073 3.35 3.197 4.6C12.878 7.096 14 8.345 14 10a6 6 0 0 1-12 0C2 6.668 5.58 2.517 7.21.8zm.413 1.021A31.25 31.25 0 0 0 5.794 3.99c-.726.95-1.436 2.008-1.96 3.07C3.304 8.133 3 9.138 3 10c0 0 2.5 1.5 5 .5s5-.5 5-.5c0-1.201-.796-2.157-2.181-3.7l-.03-.032C9.75 5.11 8.5 3.72 7.623 1.82z"/>
+                                            <path fill-rule="evenodd" d="M4.553 7.776c.82-1.641 1.717-2.753 2.093-3.13l.708.708c-.29.29-1.128 1.311-1.907 2.87z"/>
+                                        </svg> {% if sal.shower %}{{ sal.shower }}{% endif %} &nbsp;
+                                        </p>
+
+                                        <b class="btn color-title b-text-position">{% trans 'Price' %}: {{ sal.price_min }} € <br><h6 class="fon-size-min"></h6></b>
+                                    </div>
+                                    <div class="button-fix-right">
+                                        <a href="{% url 'sale_detail' sal.pk %}" class="btn btn-color btn-sm ">{% trans 'More details' %}</a>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    {% else %}
+                        
+                    {% endif %}
+
+                    {% if results_yacht  %}
+                        {% for yach in results_yacht %}
+                            <div class="col-lg-4 mb-4">
+                                <div class="card">
+                                    <a href="{% url 'yacht_detail' yach.pk %}">
+                                        <img src="{{ yach.img_main.url }}" alt="" class="card-img-top">
+                                    </a>
+                                    <div class="card-body">
+                                        {% if 'ru' in request.path %}
+                                            <p class="card-text">{{ yach.description|truncatechars:100 }}</p>
+                                        {% else %}
+                                            <p class="card-text">{{ yach.description_en|truncatechars:100 }}</p>
+                                        {% endif %}
+                                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                                        </svg> {{ yach.region}} &nbsp;
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-droplet-half" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M7.21.8C7.69.295 8 0 8 0c.109.363.234.708.371 1.038.812 1.946 2.073 3.35 3.197 4.6C12.878 7.096 14 8.345 14 10a6 6 0 0 1-12 0C2 6.668 5.58 2.517 7.21.8zm.413 1.021A31.25 31.25 0 0 0 5.794 3.99c-.726.95-1.436 2.008-1.96 3.07C3.304 8.133 3 9.138 3 10c0 0 2.5 1.5 5 .5s5-.5 5-.5c0-1.201-.796-2.157-2.181-3.7l-.03-.032C9.75 5.11 8.5 3.72 7.623 1.82z"/>
+                                            <path fill-rule="evenodd" d="M4.553 7.776c.82-1.641 1.717-2.753 2.093-3.13l.708.708c-.29.29-1.128 1.311-1.907 2.87z"/>
+                                        </svg> {% if yach.shower_k %} {{ yach.shower_k }} {% endif %} &nbsp;
+                                        </p>
+                                        <b class="btn color-title b-text-position">{% if yach.price_min %} {% trans 'Price' %}: {% trans 'from' %} {{ yach.price_min }} € {% else %} {% trans 'Price on request' %}  {% endif %} <br> <h6 class="fon-size-min">{% trans 'per week' %}</h6></b>
+                                    </div>
+                                    <div class="button-fix-right">
+                                        <a href="{% url 'yacht_detail' yach.pk %}" class="btn btn-color btn-sm ">{% trans 'More details' %}</a>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    {% else %}
+                        
+                    {% endif %}
+                {% endif %}
+            </div>   
+        </div>
+    </section><br><br>
+
+    <h2 class="text-left color-title">{% trans 'Contacts' %}</h2><br>
+
+    <div class="row m-1" id="but">
+        <div class="text-left">
+            <div class="text-left p-5 img-index-maps"><br><br>
+                <div class="maps-widgh">
+                    <h4>{% trans 'Contact Us' %}</h4>
+
+                    <p>{% trans 'Office in Italy, Olbia, Via Pisa, 30' %}</p>
+                    <p>{% trans 'Office in Russia, Moscow, ul. Okskaya d. 5 k.1' %}</p>
+                    <p><a href="mailto:info@samokhingroup.com">info@samokhingroup.com</a></p>
+                    <p><a href="https://wa.me/+393318654167"><i class="bi-whatsapp" style="color:green; font-size:25px;"></i> +39 331 865 4167 (Italy)</a></p>
+                    <p><a href="tel:+79652437557"> +7 965 243 75 57 (Russia)</a></p>
+                </div><br>
+            </div>
+        </div>
+    </div><br>
+    
+    <div class="row m-1" id="contact">
+        <div class="text-left">
+            <div class="text-left p-5 img-index-contact"><br><br>
+                <h2 class="color-text">{% trans 'Leave an Inquiry' %}</h2><br>
+                <h4 class="color-text">{% trans 'And we will help you find' %}</h4>
+                <h4 class="color-text">{% trans 'comfortable accommodation for you' %}</h4><br>
+    
+                <form method="post" action="{% url 'post_applications'%}">
+                    {% csrf_token %}
+                    <div class="form-line">
+                        <input class="input-widgt" name="name" type="text" placeholder="{% trans 'Your name' %}" required>
+                    </div>
+                    <div class="form-line">
+                        <input class="input-widgt" name="email" type="email" placeholder="{% trans 'Email' %}" required>
+                    </div>
+                    <div class="form-line">
+                        <input class="input-widgt" name="tel" type="number" placeholder="{% trans 'Phone' %}" required>
+                    </div><br><br>
+                    <div class="form-group">
+                        <input class="btn btn-color" type="submit" value="{% trans 'Send Inquiry' %}"><br>
+                    </div>
+                </form><br> 
+            </div>
+        </div>
+    </div><br>
+
+</div>
+{% endblock content %}                                    
+
+

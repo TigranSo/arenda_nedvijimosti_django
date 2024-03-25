@@ -1,0 +1,97 @@
+{% extends 'arenda/base.html' %}
+{% load i18n %}
+{% load static %}
+{% block content %}  
+
+<div class="container">
+    <h2 class="text-left color-title">{% trans 'News' %}</h2>
+
+    <div class="row">
+        <div class=" mx-auto">
+            <div class="row news-block">
+                {% for new in news %}
+                    <a href="{% url 'news_detail' new.pk %}">
+                        <div class="col-lg-4 news-item">
+                            <img src="{{ new.img_main.url }}" alt="News Image 1">
+                            {% if 'ru' in request.path  %}
+                                <p><h4>{{ new.name }}</h4></p>
+                                <p><h4>{{ new.description|truncatechars:100  }}</h4></p><br>
+                            {% else %}
+                                {% if not new.name_en or not new.description_en %}
+                                    <p><h4>{{ new.name }}</h4></p>
+                                    <p><h4>{{ new.description|truncatechars:100  }}</h4></p><br>
+                                {% else %}
+                                    <p><h4>{{ new.name_en }}</h4></p>
+                                    <p><h4>{{ new.description_en|truncatechars:100  }}</h4></p><br>
+                                {% endif %}
+                            {% endif %}
+                
+                        </div>
+                    </a>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+    
+    <!-- Пагинация -->
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item {% if not is_paginated or not page_obj.has_previous %}disabled{% endif %}">
+                <a class="page-link" href="{% if page_obj.has_previous %}?page=1{% else %}#{% endif %}" tabindex="-1" {% if not page_obj.has_previous %}aria-disabled="true"{% endif %}>{% trans 'Back' %}</a>
+            </li>
+            {% for page_num in paginator.page_range %}
+                <li class="page-item {% if page_num == page_obj.number %}active{% endif %}">
+                    <a class="page-link" href="?page={{ page_num }}">{{ page_num }}</a>
+                </li>
+            {% endfor %}
+            <li class="page-item {% if not page_obj.has_next %}disabled{% endif %}">
+                <a class="page-link" href="{% if page_obj.has_next %}?page={{ page_obj.next_page_number }}{% else %}#{% endif %}" {% if not page_obj.has_next %}aria-disabled="true"{% endif %}>{% trans 'Forward' %}</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="row m-1" id="but">
+        <div class="text-left">
+            <div class="text-left p-5 img-index-maps"><br><br>
+                <div class="maps-widgh">
+                    <h4>{% trans 'Contact Us' %}</h4>
+
+                    <p>{% trans 'Office in Italy, Olbia, Via Pisa, 30' %}</p>
+                    <p>{% trans 'Office in Russia, Moscow, ul. Okskaya d. 5 k.1' %}</p>
+                    <p><a href="mailto:info@samokhingroup.com">info@samokhingroup.com</a></p>
+                    <p><a href="https://wa.me/+393318654167"><i class="bi-whatsapp" style="color:green; font-size:25px;"></i> +39 331 865 4167 (Italy)</a></p>
+                    <p><a href="tel:+79652437557"> +7 965 243 75 57 (Russia)</a></p>
+                </div><br>
+            </div>
+        </div>
+    </div><br>
+    
+    <div class="row m-1" id="contact">
+        <div class="text-left">
+            <div class="text-left p-5 img-index-contact"><br><br>
+                <h2 class="color-text">{% trans 'Leave an Inquiry' %}</h2><br>
+                <h4 class="color-text">{% trans 'And we will help you find' %}</h4>
+                <h4 class="color-text">{% trans 'comfortable accommodation for you' %}</h4><br>
+    
+                <form method="post" action="{% url 'post_applications'%}">
+                    {% csrf_token %}
+                    <div class="form-line">
+                        <input class="input-widgt" name="name" type="text" placeholder="{% trans 'Your name' %}" required>
+                    </div>
+                    <div class="form-line">
+                        <input class="input-widgt" name="email" type="email" placeholder="{% trans 'Email' %}" required>
+                    </div>
+                    <div class="form-line">
+                        <input class="input-widgt" name="tel" type="number" placeholder="{% trans 'Phone' %}" required>
+                    </div><br><br>
+                    <div class="form-group">
+                        <input class="btn btn-color" type="submit" value="{% trans 'Send Inquiry' %}"><br>
+                    </div>
+                </form><br> 
+            </div>
+        </div>
+    </div><br>
+
+</div>
+{% endblock content %}                                    

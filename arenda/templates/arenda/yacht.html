@@ -1,0 +1,131 @@
+{% extends 'arenda/base.html' %}
+{% load i18n %}
+{% load static %}
+{% block content %}  
+
+<div class="container">
+    <h2 class="text-left color-title"></h2><br>
+        <div class="container form-line">
+            <!-- <form method="GET" action="{% url 'search_results' %}">
+                {% csrf_token %}
+                <div class="container form-line">
+                    <div class="form-group form-line">
+                        {{ form2.region }}
+                    </div>
+                    <div class="form-group form-line">
+                        {{ form2.property_type_2 }}
+                    </div>
+                    <div class="form-group form-line">
+                        {{ form2.property_type }}
+                    </div>
+                    <div class="form-group form-line">
+                        {{ form2.rooms }}
+                    </div>
+                    <div class="form-group form-line">
+                        {{ form2.price_min }}
+                    </div>
+                    <div class="form-group form-line">
+                        <button type="submit" class="btn btn-color">{% trans 'Search' %}</button>
+                    </div>
+                </div>
+            </form><br><br> -->
+            
+        <section id="gallery">
+            <div class="container">
+                <div class="row">
+                    {% for yach in yacht %}
+                        <div class="col-lg-4 mb-4">
+                            <div class="card">
+                                <a href="{% url 'yacht_detail' yach.pk %}">
+                                    <img src="{{ yach.img_main.url }}" alt="" class="card-img-top">
+                                </a>
+                                <div class="card-body">
+                                    {% if 'ru' in request.path %}
+                                        <p class="card-text">{{ yach.description|truncatechars:100 }}</p>
+                                    {% else %}
+                                        <p class="card-text">{{ yach.description_en|truncatechars:100 }}</p>
+                                    {% endif %}
+                                    <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                                    </svg> {{ yach.region}} &nbsp;
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-droplet-half" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M7.21.8C7.69.295 8 0 8 0c.109.363.234.708.371 1.038.812 1.946 2.073 3.35 3.197 4.6C12.878 7.096 14 8.345 14 10a6 6 0 0 1-12 0C2 6.668 5.58 2.517 7.21.8zm.413 1.021A31.25 31.25 0 0 0 5.794 3.99c-.726.95-1.436 2.008-1.96 3.07C3.304 8.133 3 9.138 3 10c0 0 2.5 1.5 5 .5s5-.5 5-.5c0-1.201-.796-2.157-2.181-3.7l-.03-.032C9.75 5.11 8.5 3.72 7.623 1.82z"/>
+                                        <path fill-rule="evenodd" d="M4.553 7.776c.82-1.641 1.717-2.753 2.093-3.13l.708.708c-.29.29-1.128 1.311-1.907 2.87z"/>
+                                    </svg> {% if yach.shower_k %} {{ yach.shower_k }} {% endif %} &nbsp;
+                                    </p>
+                                    <b class="btn color-title b-text-position">{% if yach.price_min %} {% trans 'Price' %}: {% trans 'from' %} {{ yach.price_min }} € {% else %} {% trans 'Price on request' %}  {% endif %} <br> <h6 class="fon-size-min">{% trans 'per week' %}</h6></b>
+                                </div>
+                                <div class="button-fix-right">
+                                    <a href="{% url 'yacht_detail' yach.pk %}" class="btn btn-color btn-sm ">{% trans 'More details' %}</a>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>   
+            </div>
+        </section><br>
+
+        <!-- Пагинация -->
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item {% if not is_paginated or not page_obj.has_previous %}disabled{% endif %}">
+                    <a class="page-link" href="{% if page_obj.has_previous %}?page=1{% else %}#{% endif %}" tabindex="-1" {% if not page_obj.has_previous %}aria-disabled="true"{% endif %}>{% trans 'Back' %}</a>
+                </li>
+                {% for page_num in paginator.page_range %}
+                    <li class="page-item {% if page_num == page_obj.number %}active{% endif %}">
+                        <a class="page-link" href="?page={{ page_num }}">{{ page_num }}</a>
+                    </li>
+                {% endfor %}
+                <li class="page-item {% if not page_obj.has_next %}disabled{% endif %}">
+                    <a class="page-link" href="{% if page_obj.has_next %}?page={{ page_obj.next_page_number }}{% else %}#{% endif %}" {% if not page_obj.has_next %}aria-disabled="true"{% endif %}>{% trans 'Forward' %}</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="row m-1" id="contact">
+            <div class="text-left">
+                <div class="text-left p-5 img-index-contact"><br><br>
+                    <h2 class="color-text">{% trans 'Leave an Inquiry' %}</h2><br>
+                    <h4 class="color-text">{% trans 'And we will help you find' %}</h4>
+                    <h4 class="color-text">{% trans 'comfortable accommodation for you' %}</h4><br>
+        
+                    <form method="post" action="{% url 'post_applications'%}">
+                        {% csrf_token %}
+                        <div class="form-line">
+                            <input class="input-widgt" name="name" type="text" placeholder="{% trans 'Your name' %}" required>
+                        </div>
+                        <div class="form-line">
+                            <input class="input-widgt" name="email" type="email" placeholder="{% trans 'Email' %}" required>
+                        </div>
+                        <div class="form-line">
+                            <input class="input-widgt" name="tel" type="number" placeholder="{% trans 'Phone' %}" required>
+                        </div><br><br>
+                        <div class="form-group">
+                            <input class="btn btn-color" type="submit" value="{% trans 'Send Inquiry' %}"><br>
+                        </div>
+                    </form><br> 
+                </div>
+            </div>
+        </div><br>
+
+        <h2 class="text-center color-title">{% trans 'Contacts' %}</h2><br>
+
+        <div class="row m-1" id="but">
+            <div class="text-left">
+                <div class="text-left p-5 img-index-maps"><br><br>
+                    <div class="maps-widgh">
+                        <h4>{% trans 'Contact Us' %}</h4>
+
+                        <p>{% trans 'Office in Italy, Olbia, Via Pisa, 30' %}</p>
+                        <p>{% trans 'Office in Russia, Moscow, ul. Okskaya d. 5 k.1' %}</p>
+                        <p><a href="mailto:info@samokhingroup.com">info@samokhingroup.com</a></p>
+                        <p><a href="https://wa.me/+393318654167"><i class="bi-whatsapp" style="color:green; font-size:25px;"></i> +39 331 865 4167 (Italy)</a></p>
+                        <p><a href="tel:+79652437557"> +7 965 243 75 57 (Russia)</a></p>
+                    </div><br>
+                </div>
+            </div>
+        </div><br>
+    </div>
+</div><br>
+{% endblock content %}             

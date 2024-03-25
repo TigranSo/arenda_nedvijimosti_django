@@ -1,0 +1,198 @@
+{% extends 'arenda/base.html' %}
+{% load i18n %}
+{% load static %}
+{% block content %}  
+
+<div class="container">
+        {% if 'ru' in request.path %}
+            <h2 class="text-left color-title">{{ sale.name }}</h2><br>
+        {% else %}
+            <h2 class="text-left color-title">{{ sale.name_en }}</h2><br>
+        {% endif %}
+        <section>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 mb-2 order-lg-1">
+                        <div class="imageGallery">
+                            <!-- id="mainImage" -->                     
+                            <a href="{{ sale.img_main.url }}" data-fancybox="gallery">
+                                <img src="{{ sale.img_main.url }}" alt="Flower" class="mainImage">
+                            </a>                      
+                        </div>
+                    </div>
+                    <div class="col-lg-8 mb-4 order-lg-3">
+                        <div class="imageSelector">
+                            <div class="thumbnail-container">
+                                {% if  sale.img_1 %}
+                                <a href="{{ sale.img_1.url }}" data-fancybox="gallery">
+                                    <img src="{{ sale.img_1.url }}" alt="Flower 2" class="thumbnail">
+                                </a>
+                            {% endif %}
+                            {% if  sale.img_2 %}
+                                <a href="{{ sale.img_2.url }}" data-fancybox="gallery">
+                                    <img src="{{ sale.img_2.url }}" alt="Flower 3" class="thumbnail">
+                                </a>
+                            {% endif %}
+                            {% if  sale.img_3 %}
+                                <a href="{{ sale.img_3.url }}" data-fancybox="gallery">
+                                    <img src="{{ sale.img_3.url }}" alt="Flower 4" class="thumbnail">
+                                </a>
+                            {% endif %}
+                            {% if  sale.img_4 %}
+                                <a href="{{ sale.img_4.url }}" data-fancybox="gallery">
+                                    <img src="{{ sale.img_4.url }}" alt="Flower 4" class="thumbnail">
+                                </a>
+                            {% endif %}
+                            {% if  sale.img_5 %}
+                                <a href="{{ sale.img_5.url }}" data-fancybox="gallery">
+                                    <img src="{{ sale.img_5.url }}" alt="Flower 5" class="thumbnail">
+                                </a>
+                            {% endif %}
+                            {% if  sale.img_6 %}
+                                <a href="{{ sale.img_6.url }}" data-fancybox="gallery">
+                                    <img src="{{ sale.img_6.url }}" alt="Flower 6" class="thumbnail">
+                                </a>
+                            {% endif %}
+                            {% if  sale.img_7 %}
+                                <a href="{{ sale.img_7.url }}" data-fancybox="gallery">
+                                    <img src="{{ sale.img_7.url }}" alt="Flower 7" class="thumbnail">
+                                </a>
+                            {% endif %}
+                            {% if  sale.img_8 %}
+                                <a href="{{ sale.img_8.url }}" data-fancybox="gallery">
+                                    <img src="{{ sale.img_8.url }}" alt="Flower 8" class="thumbnail">
+                                </a>
+                            {% endif %}
+                            {% if  sale.img_9 %}
+                                <a href="{{ sale.img_9.url }}" data-fancybox="gallery">
+                                    <img src="{{ sale.img_9.url }}" alt="Flower 9" class="thumbnail">
+                                </a>
+                            {% endif %}
+                            {% if  sale.img_10 %}
+                                <a href="{{ sale.img_10.url }}" data-fancybox="gallery">
+                                    <img src="{{ sale.img_10.url }}" alt="Flower 10" class="thumbnail">
+                                </a>
+                            {% endif %}
+                            {% if  sale.img_11 %}
+                                <a href="{{ sale.img_11url }}" data-fancybox="gallery">
+                                    <img src="{{ sale.img_11.url }}" alt="Flower 11" class="thumbnail">
+                                </a>
+                            {% endif %}
+                            {% if  sale.img_12 %}
+                                <a href="{{ sale.img_12.url }}" data-fancybox="gallery">
+                                    <img src="{{ sale.img_12.url }}" alt="Flower 12" class="thumbnail">
+                                </a>
+                            {% endif %}
+                            {% if  sale.img_13 %}
+                                <a href="{{ sale.img_13.url }}" data-fancybox="gallery">
+                                    <img src="{{ sale.img_13.url }}" alt="Flower 13" class="thumbnail">
+                                </a>
+                            {% endif %}
+                            {% if  sale.img_14 %}
+                                <a href="{{ sale.img_14.url }}" data-fancybox="gallery">
+                                    <img src="{{ sale.img_14.url }}" alt="Flower 14" class="thumbnail">
+                                </a>
+                            {% endif %}
+                            {% if  sale.img_15 %}
+                                <a href="{{ sale.img_15.url }}" data-fancybox="gallery">
+                                    <img src="{{ sale.img_15.url }}" alt="Flower 15" class="thumbnail">
+                                </a>
+                            {% endif %}
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </section>
+        <div class="container">
+            {% if 'ru' in request.path %}
+                <p class="card-text">{{ sale.description}}</p>
+            {% else %}
+                <p class="card-text">{{ sale.description_en }}</p>
+            {% endif %}
+        </div><br>
+
+        <div class="col-lg-4 p-2 m-0 order-lg-2">
+            <h3><b>{% trans 'Characteristics' %}</b></h3>
+            <p>- {% trans 'Living area' %} {{ sale.square }} м2</p>
+            <p>- {% trans 'Maximum number of guests' %} {{ sale.people }}</p>
+            <p>- {{ sale.rooms }} {% trans 'bedrooms' %}</p>
+            <p>- {{ sale.shower }} {% trans 'bathrooms' %}</p>
+            <p class="color-title"><b>{% trans 'Price' %}: {{ sale.price_min }} €</b></p>
+
+            {% if sale.private_1 %}
+                <p>- {% trans 'Swimming pool' %}</p>
+            {% endif %}
+            {% if sale.private_2 %}
+                <p>- {{ sale.private_2 }}</p>
+            {% endif %}
+
+            <p>{{ sale.description_1 }}</p>
+            {% if sale.Location %}
+                <h3 class="text-left color-title">{% trans 'Location' %}</h3>
+                {% if 'ru' in request.path %}
+                    <p class="text-left">{{ sale.Location }}</p><br>
+                {% else %}
+                    <p class="text-left">{{ sale.Location_en }}</p><br>
+                {% endif %}
+            {% endif %}
+
+            <a href="#contact" class="btn btn-color">{% trans 'Leave an inquiry' %}</a>
+        </div><br>        
+
+        <div class="row m-1" id="but">
+            <div class="text-left">
+                <div class="text-left p-5 img-index-maps"><br><br>
+                    <div class="maps-widgh">
+                        <h4>{% trans 'Contact Us' %}</h4>
+
+                        <p>{% trans 'Office in Italy, Olbia, Via Pisa, 30' %}</p>
+                        <p>{% trans 'Office in Russia, Moscow, ul. Okskaya d. 5 k.1' %}</p>
+                        <p><a href="mailto:info@samokhingroup.com">info@samokhingroup.com</a></p>
+                        <p><a href="https://wa.me/+393318654167"><i class="bi-whatsapp" style="color:green; font-size:25px;"></i> +39 331 865 4167 (Italy)</a></p>
+                        <p><a href="tel:+79652437557"> +7 965 243 75 57 (Russia)</a></p>
+                    </div><br>
+                </div>
+            </div>
+        </div><br>
+
+        <div class="row m-1" id="contact">
+            <div class="text-left">
+                <div class="text-left p-5 img-index-contact"><br><br>
+                    <h2 class="color-text">{% trans 'Leave an Inquiry' %}</h2><br>
+                    <h4 class="color-text">{% trans 'And we will help you find' %}</h4>
+                    <h4 class="color-text">{% trans 'comfortable accommodation for you' %}</h4><br>
+        
+                    <form method="post" action="{% url 'post_applications'%}">
+                        {% csrf_token %}
+                        <div class="form-line">
+                            <input class="input-widgt" name="name" type="text" placeholder="{% trans 'Your name' %}" required>
+                        </div>
+                        <div class="form-line">
+                            <input class="input-widgt" name="email" type="email" placeholder="{% trans 'Email' %}" required>
+                        </div>
+                        <div class="form-line">
+                            <input class="input-widgt" name="tel" type="number" placeholder="{% trans 'Phone' %}" required>
+                        </div><br><br>
+                        <div class="form-group">
+                            <input class="btn btn-color" type="submit" value="{% trans 'Send Inquiry' %}"><br>
+                        </div>
+                    </form><br> 
+                </div>
+            </div>
+        </div><br>
+
+    </div>
+      
+</div><br>
+<script>
+    $(document).ready(function () {
+      $('[data-fancybox="gallery"]').fancybox({
+        // Настройки FancyBox, если необходимо
+      });
+    });
+  </script>
+  
+{% endblock content %}             
